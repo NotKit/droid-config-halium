@@ -1,8 +1,8 @@
-%package -n patterns-sailfish-device-configuration-pinephone
-Summary: Sailfish Configuration Pinephone
+%package -n patterns-sailfish-device-configuration-halium
+Summary: Sailfish Configuration Halium
 
-Requires: patterns-sailfish-device-configuration-common-pinephone
-Requires: patterns-sailfish-device-adaptation-pinephone
+Requires: patterns-sailfish-device-configuration-common-halium
+Requires: patterns-sailfish-device-adaptation-halium
 
 Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-applications
@@ -29,7 +29,7 @@ Requires: jolla-rnd-device
 Requires: patterns-sailfish-consumer-generic
 Requires: patterns-sailfish-store-applications
 
-Requires: sailfish-content-graphics-z1.0
+Requires: sailfish-content-graphics-z1.5
 Requires: jolla-settings-accounts-extensions-3rd-party-all
 
 # For Mozilla location services (online)
@@ -41,7 +41,7 @@ Requires: csd
 # KMod required for kmod-static-nodes.service 
 Requires: kmod
 
-%description -n patterns-sailfish-device-configuration-pinephone
-Pattern with packages for pinephone configurations
+%description -n patterns-sailfish-device-configuration-halium
+Pattern with packages for halium configurations
 
-%files -n patterns-sailfish-device-configuration-pinephone
+%files -n patterns-sailfish-device-configuration-halium
