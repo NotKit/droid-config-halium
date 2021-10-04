@@ -27,6 +27,9 @@ Obsoletes: ofono-configs-mer
 # No device reset
 Provides: jolla-settings-system-reset
 
+# For mount-android.sh
+Requires: gnu-bash
+
 %define ofono_enable_plugins bluez5,hfp_ag_bluez5
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
