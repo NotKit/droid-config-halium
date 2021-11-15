@@ -1,5 +1,5 @@
-%package -n patterns-sailfish-device-adaptation-pinephone
-Summary: Sailfish HW Adaptation Pinephone
+%package -n patterns-sailfish-device-adaptation-x86
+Summary: Sailfish HW Adaptation x86
 
 Requires: qt5-plugin-generic-evdev
 
@@ -75,26 +75,22 @@ Requires: alsa-utils
 Requires: v4l-utils
 
 # Bluetooth binaries
-Requires: realtek-bt-firmware
+# Requires: realtek-bt-firmware
 
-Requires: kernel-adaptation-pine64
-Requires: droid-config-pinephone-sailfish
-Requires: droid-config-pinephone-pulseaudio-settings
-Requires: droid-config-pinephone-policy-settings
-Requires: droid-config-pinephone-preinit-plugin
-Requires: droid-config-pinephone-bluez5
-Requires: droid-hal-version-pinephone
+# Requires: kernel-adaptation-pine64
+Requires: droid-config-x86-sailfish
+Requires: droid-config-x86-pulseaudio-settings
+Requires: droid-config-x86-policy-settings
+Requires: droid-config-x86-preinit-plugin
+Requires: droid-config-x86-bluez5
+Requires: droid-hal-version-x86
 #Requires: droid-config-donebeevil-flashing
 
-#Include atinout to talk to the modem
-Requires: atinout
-Requires: eg25-manager
-
 # Enable home encryption
-Requires: sailfish-device-encryption-community
+# Requires: sailfish-device-encryption-community
 
-%description -n patterns-sailfish-device-adaptation-pinephone
-Pattern with packages for pinephone HW Adaptation
+%description -n patterns-sailfish-device-adaptation-x86
+Pattern with packages for x86 HW Adaptation
 
-%files -n patterns-sailfish-device-adaptation-pinephone
+%files -n patterns-sailfish-device-adaptation-x86
  
