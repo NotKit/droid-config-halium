@@ -8,6 +8,9 @@ Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
+# Halium
+Requires: lxc
+
 # Splash screen
 # Requires: plymouth-lite
 # Requires: plymouth-lite-theme-default
