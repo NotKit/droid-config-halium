@@ -12,7 +12,16 @@ echo $NOTIFY_SOCKET > /run/droid-hal/notify-socket-name
 # require different handling for every different android version.
 # exec nohup /sbin/droid-hal-init
 
-umount -l /sys/fs/cgroup/schedtune || true
+# breaks LXC if mounted
+if [ -d /sys/fs/cgroup/schedtune ]; then
+    umount -l /sys/fs/cgroup/schedtune || true
+fi
+# mount binderfs if needed
+if [ ! -e /dev/binder ]; then
+    mkdir -p /dev/binderfs
+    mount -t binder binder /dev/binderfs -o stats=global
+    ln -s /dev/binderfs/*binder /dev
+fi
 
 mkdir -p /dev/__properties__
 mkdir -p /dev/socket
