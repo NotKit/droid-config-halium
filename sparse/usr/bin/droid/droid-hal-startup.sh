@@ -26,6 +26,11 @@ fi
 mkdir -p /dev/__properties__
 mkdir -p /dev/socket
 
+# Halim 11 hack: overlay /vendor/bin/vndservicemanager
+if [ -f /usr/share/halium-overlay/vendor/bin/vndservicemanager ]; then
+    mount -o bind /usr/share/halium-overlay/vendor/bin/vndservicemanager /android/vendor/bin/vndservicemanager
+fi
+
 lxc-start -n android -- /init
 
 lxc-wait -n android -s RUNNING -t 30
